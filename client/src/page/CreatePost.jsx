@@ -32,7 +32,7 @@ const CreatePost = () => {
     if (form.prompt) {
       try {
         setGeneratingImg(true);
-        const response = await fetch('https://ai-image-generation-vvdr.onrender.com/api/v1/dalle', {
+        const response = await fetch('https://ai-image-generation-server-xrop.onrender.com/api/v1/dalle', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -60,7 +60,7 @@ const CreatePost = () => {
     if (form.prompt && form.photo) {
       setLoading(true);
       try {
-        const response = await fetch('https://ai-image-generation-vvdr.onrender.com/api/v1/post', {
+        const response = await fetch('https://ai-image-generation-server-xrop.onrender.com/api/v1/post', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -85,10 +85,10 @@ const CreatePost = () => {
     <section className="max-w-7xl mx-auto">
       <div>
         <h1 className="font-extrabold text-[#222328] text-[32px]">Tạo mới</h1>
-        <p className="mt-2 text-[#666e75] text-[14px] max-w-[500px]">Tạo một hình ảnh đầy tưởng tượng thông qua trí tuệ nhân tạo DALL-E và chia sẻ nó với cộng đồng</p>
+        <p className="mt-2 text-[#666e75] text-[14px]">Tạo một hình ảnh đầy tưởng tượng thông qua trí tuệ nhân tạo DALL-E và chia sẻ nó với cộng đồng</p>
       </div>
 
-      <form className="mt-16 max-w-3xl" onSubmit={handleSubmit}>
+      <form className="mt-5 max-w-3xl" onSubmit={handleSubmit}>
         <div className="flex flex-col gap-5">
         <FormField
           labelName="Tên của bạn"
@@ -103,7 +103,7 @@ const CreatePost = () => {
             labelName="Gợi ý"
             type="text"
             name="prompt"
-            placeholder="Một bức tranh dầu ấn tượng về hoa hướng dương trong một bình hoa màu tím ..."
+            placeholder="Một người đàn ông lang thang trên những con đường mưa ở Tokyo, với những biển hiệu đèn neon sáng chói, 50mm"
             value={form.prompt}
             handleChange={handleChange}
             isSurpriseMe

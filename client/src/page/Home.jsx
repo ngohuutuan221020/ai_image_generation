@@ -33,7 +33,7 @@ const Home = () => {
     setLoading(true);
 
     try {
-      const response = await fetch('https://ai-image-generation-vvdr.onrender.com/api/v1/post', {
+      const response = await fetch('https://ai-image-generation-server-xrop.onrender.com/api/v1/post', {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
@@ -71,10 +71,10 @@ const Home = () => {
     <section className="max-w-7xl mx-auto">
       <div>
         <h1 className="font-extrabold text-[#222328] text-[32px]">The Community Showcase</h1>
-        <p className="mt-2 text-[#666e75] text-[14px] max-w-[500px]">Duyệt qua bộ sưu tập hình ảnh sáng tạo và đẹp mắt được tạo ra bởi trí thông minh nhân tạo DALL-E</p>
+        <p className="mt-2 text-[#666e75] text-[14px]">Duyệt qua bộ sưu tập hình ảnh sáng tạo và đẹp mắt được tạo ra bởi trí thông minh nhân tạo DALL-E</p>
       </div>
 
-      <div className="mt-16">
+      <div className="mt-5">
         <FormField
           labelName="Tìm kiếm bài viết"
           type="text"

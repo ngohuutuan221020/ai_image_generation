@@ -1,2 +1,5 @@
-MONGODB_URL=
-"mongodb+srv://ngohuutuan221020:pV94fk0FAArbAadL@cluster0.jrebxbm.mongodb.net/?retryWrites=true&w=majority"
+MONGODB_URL="mongodb+srv://ngohuutuan221020:pV94fk0FAArbAadL@cluster0.jrebxbm.mongodb.net/?retryWrites=true&w=majority"
+OPENAI_API_KEY="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"
+CLOUDINARY_CLOUD_NAME="dxys0l108"
+CLOUDINARY_API_KEY="525786966999251"
+CLOUDINARY_API_SECRET="i8J51gXqctSzKYpSwW427DjYZC0"
